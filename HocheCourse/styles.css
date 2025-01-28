@@ -1,0 +1,155 @@
+/* style.css */
+
+body {
+    background-color: rgb(186, 186, 255);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* main container */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* left panel for lessons */
+.left_panel {
+    width: 250px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
+
+.left_panel h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* top bar for menu */
+.top_bar {
+    background-color: #add8e6;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.menu li {
+    cursor: pointer;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
+.menu li:hover {
+    background-color: rgb(67, 167, 201);
+    color: white;
+    border-radius: 2px;
+}
+
+/* Account styling */
+/* Account container */
+.account {
+    cursor: pointer;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    gap: 20px;
+    padding: 8px 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect on entire account div */
+.account:hover {
+    background-color: rgb(67, 167, 201);
+    color: white;
+    border-radius: 2px;
+}
+/* Account container */
+.account {
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    margin: 0;
+    gap: 10px; /* Space between icons and text */
+    padding: 8px 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect on entire account div */
+.account:hover {
+    background-color: rgb(67, 167, 201);
+    color: white;
+    border-radius: 2px;
+}
+
+/* Style for each icon */
+.account i {
+    font-size: 24px; /* Icon size */
+    cursor: pointer; /* Makes the icon clickable */
+}
+
+/* Style for text inside account */
+.account span {
+    font-size: 16px; /* Text size */
+}
+
+/* Optional: spacing between account items if needed */
+.account > * {
+    margin: 0 5px;
+}
+
+/* tree for viewing lessons */
+.tree {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.tree ul {
+    padding-left: 20px;
+}
+
+.tree li { /* General styling for .tree items */
+    cursor: pointer;
+    padding: 6px 0;
+    transition: color 0.3s ease;
+}
+
+.tree li:hover {
+    color: #0073e6;
+    font-weight: bold;
+}
+
+/* Optional: style the selected parent as well */
+.tree li.selected {
+    color: #3375b6; /* Different color for the selected parent item */
+    font-weight: bold;
+}
+
+/* lesson viewport */
+.lesson_viewport {
+    flex-grow: 1;
+    padding: 25px;
+    background-color: #d7f2fa;
+    overflow-y: auto;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Apply margin to all direct children inside lesson_viewport */
+.lesson_viewport > * {
+    margin: 15px 0;
+}
